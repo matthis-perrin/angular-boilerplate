@@ -1,0 +1,148 @@
+/* line 5, scss/tile.scss */
+.tiles {
+  width: 328px;
+  padding: 7px;
+}
+
+/* line 10, scss/tile.scss */
+.tile {
+  width: 150px;
+  height: 150px;
+  margin: 7px;
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 17, scss/tile.scss */
+.tile.big {
+  width: 314px;
+}
+/* line 21, scss/tile.scss */
+.tile .name {
+  color: white;
+  position: relative;
+  top: 25px;
+  left: 15px;
+}
+/* line 28, scss/tile.scss */
+.tile:before {
+  content: "";
+  display: block;
+  background-image: url("../images/sprite.png");
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-top: 20px;
+  width: 75px;
+  height: 75px;
+}
+/* line 39, scss/tile.scss */
+.tile.boom {
+  background-color: #00c4d0;
+}
+/* line 41, scss/tile.scss */
+.tile.boom:before {
+  background-position-x: 0px;
+}
+/* line 46, scss/tile.scss */
+.tile.videos {
+  background-color: #00ce9b;
+}
+/* line 48, scss/tile.scss */
+.tile.videos:before {
+  background-position-x: -75px;
+}
+/* line 53, scss/tile.scss */
+.tile.settings {
+  background-color: #9f449b;
+}
+/* line 55, scss/tile.scss */
+.tile.settings:before {
+  background-position-x: -150px;
+}
+/* line 60, scss/tile.scss */
+.tile.maps {
+  background-color: #345aa5;
+}
+/* line 62, scss/tile.scss */
+.tile.maps:before {
+  background-position-x: -225px;
+}
+/* line 67, scss/tile.scss */
+.tile.games {
+  background-color: #787f88;
+}
+/* line 69, scss/tile.scss */
+.tile.games:before {
+  background-position-x: -300px;
+}
+
+/* line 13, scss/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 23, scss/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, scss/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 29, scss/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 32, scss/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 36, scss/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, scss/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 45, scss/reset.scss */
+input:focus, textarea:focus {
+  outline: 0;
+}
+
+/* line 1, scss/common.scss */
+body {
+  background-color: #2b313a;
+}
+
+/* line 5, scss/common.scss */
+div {
+  font-family: Arial, Helvetica, sans-serif;
+}

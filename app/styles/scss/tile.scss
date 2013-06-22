@@ -1,0 +1,73 @@
+$tileSize: 150px;
+$tileMargin: 14px;
+$tileNameColor: white;
+
+.tiles {
+	width: 2 * ($tileSize + $tileMargin);
+	padding: $tileMargin / 2;
+}
+
+.tile {
+	width: $tileSize;
+	height: $tileSize;
+	margin: $tileMargin / 2;
+	display: inline-block;
+	cursor: pointer;
+
+	&.big {
+		width: $tileSize * 2 + $tileMargin
+	}
+
+	.name {
+		color: $tileNameColor;
+		position: relative;
+		top: 25px;
+		left: 15px;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		background-image: $sprite;
+		background-repeat: no-repeat;
+		margin: auto;
+		margin-top: 20px;
+		width: 75px;
+		height: 75px;
+	}
+
+	&.boom {
+		background-color: $lightBlue;
+		&:before {
+			background-position-x: 0px;
+		}
+	}
+
+	&.videos {
+		background-color: $green;
+		&:before {
+			background-position-x: -75px;
+		}
+	}
+
+	&.settings {
+		background-color: $purple;
+		&:before {
+			background-position-x: -150px;
+		}
+	}
+
+	&.maps {
+		background-color: $blue;
+		&:before {
+			background-position-x: -225px;
+		}
+	}
+
+	&.games {
+		background-color: $gray;
+		&:before {
+			background-position-x: -300px;
+		}
+	}
+}
